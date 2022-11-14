@@ -1,0 +1,17 @@
+<h1 class="ml-2">Chat App</h1>
+
+<div class="messages-container">
+    <div class="incoming-message" *ngFor="let message of messages">
+        <span >{{message}} </span>
+    </div>
+</div>
+<div class="message-input-area">
+    <input #messageInput (keydown.enter)="sendMessage()" class="text-input" type="text">
+    <button type="button" class="btn" (click)="sendMessage()">
+        <i-bs name="arrow-right-circle-fill"
+              width="50"
+              height="50">
+        </i-bs>
+    </button>
+</div>
+<p>chat works!</p>
